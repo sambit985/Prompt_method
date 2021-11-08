@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>
+JavaScript prompt() method
+</title>
+<style>
+				#main{
+				margin-top:300px;
+				height:400px;
+				width:550px;
+				background-color:#565656;
+				margin-left:150px;
+				color:white;
+				}
+				
+</style>
+
+</head>
+<div id="main">
+<body style = "text-align: center;">
+<h1 style = "color: Deepskyblue;">
+Hello Geekster Members
+</h1>
+<h2 style="color:springgreen">
+Use Of JavaScript prompt() method
+</h2>
+
+<button onclick = "fun()"style="color:green;padding:10px;">
+Click Here
+</button>
+<p id = "para">
+		 Prompt() to display a dialog that asks users for their favorite programming languages.<br> Javascript Always takesup input as a String. I we want to display output as a number data type then we can use "+prompt".
+</p>
+</div>
+<script>
+function fun() {
+
+let lang = prompt('What is your favorite programming language?');
+
+let feedback = lang.toLowerCase() === 'javascript' ? `It's great!` :
+    `It's ${lang}`;
+
+alert(feedback);
+}
+
+</script>
+
+
+</body>
+
+</html>
